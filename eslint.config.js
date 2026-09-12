@@ -35,9 +35,16 @@ export default [
 
   // TypeScript-specific overrides
   {
-    files: ["**/*.ts"],
+    files: ["db/**/*.ts", "src/**/*.ts"],
     languageOptions: {
       parser: tseslint.parser,
+    },
+    rules: {
+      // Keep application TypeScript consistent without requiring a separate formatter.
+      semi: ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"],
+      "object-curly-spacing": ["error", "always"],
+      "array-bracket-spacing": ["error", "never"],
     },
   },
 ];
