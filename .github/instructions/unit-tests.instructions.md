@@ -20,6 +20,12 @@ Unit tests run with **Vitest** (`npm run test:unit`). They cover the two highest
 - Use `describe('<module / function>')` blocks and `it('does X when Y')` cases.
 - Add type annotations on helpers and fixtures — this codebase requires explicit types.
 
+## Comments and Formatting
+
+- Comment the behavior or test-design reason being protected, not the mechanics of the test steps or assertions.
+- Keep comments current when production behavior changes; stale comments should be updated or removed with the test.
+- Follow the repository TypeScript formatting rules: double quotes, semicolons, trailing commas in multiline constructs, and spaces inside object braces. ESLint checks the supported formatting rules.
+
 ## Testing Pure Transforms
 
 - No database needed — import the function and assert on its output.

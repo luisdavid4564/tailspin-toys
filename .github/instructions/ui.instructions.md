@@ -20,6 +20,12 @@ Refer to technology-specific instruction files:
 
 ## Core Principles
 
+### Comments and Documentation
+
+- Comment why a component or interaction exists and explain non-obvious accessibility or UX decisions; do not restate the markup or utility classes.
+- Keep comments current, and remove comments that become redundant or inaccurate.
+- Document every reusable component's `Props` interface with its public contract and prop meanings.
+
 ### Testability
 
 - Every interactive element MUST include a `data-testid` attribute
@@ -68,3 +74,8 @@ Refer to technology-specific instruction files:
    - Test keyboard navigation
    - Check focus states
    - Validate semantic structure
+
+### TypeScript Formatting
+
+- Use double quotes, semicolons, trailing commas in multiline constructs, and spaces inside object braces.
+- Keep component props and data-layer function signatures explicitly typed. ESLint enforces the supported formatting rules.
